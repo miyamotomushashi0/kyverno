@@ -450,7 +450,7 @@ metricsService:
 
 serviceMonitor:
   # -- Create a `ServiceMonitor` to collect Prometheus metrics.
-  enabled: false
+  enabled: true
   # -- Additional labels
   additionalLabels:
     # key: value
@@ -499,7 +499,7 @@ sigstoreVolume:
 
 grafana:
   # -- Enable grafana dashboard creation.
-  enabled: false
+  enabled: true
 
   # -- Configmap name template.
   configMapName: '{{ include "kyverno.fullname" . }}-grafana'
